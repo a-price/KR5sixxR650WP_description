@@ -1,0 +1,6 @@
+<package>
+  <description brief="KR5sixxR650WP_description">KR5sixxR650WP_description</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>
