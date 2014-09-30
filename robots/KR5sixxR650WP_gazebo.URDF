@@ -1,5 +1,10 @@
 <robot
   name="KR5sixxR650WP_description">
+  <link name="world"/> <!-- Used for fixing robot to Gazebo 'base_link' -->
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint>
   <link
     name="base_link">
     <inertial>
@@ -95,7 +100,7 @@
     <limit
       lower="-2.9671"
       upper="2.9671"
-      effort="4"
+      effort="330"
       velocity="6.545" />
   </joint>
   <link
@@ -153,7 +158,7 @@
     <limit
       lower="-1.745329252"
       upper="2.35619449"
-      effort="4"
+      effort="330"
       velocity="5.236" />
   </joint>
   <link
@@ -211,7 +216,7 @@
     <limit
       lower="-3.647738137"
       upper="0.959931089"
-      effort="4"
+      effort="330"
       velocity="6.545" />
   </joint>
   <link
@@ -269,7 +274,7 @@
     <limit
       lower="-3.3161"
       upper="3.3161"
-      effort="2"
+      effort="550"
       velocity="7.1558" />
   </joint>
   <link
@@ -327,7 +332,7 @@
     <limit
       lower="-2.094395102"
       upper="2.094395102"
-      effort="2"
+      effort="54"
       velocity="7.1558" />
   </joint>
   <link
@@ -385,7 +390,72 @@
     <limit
       lower="-6.24827872"
       upper="6.24827872"
-      effort="2"
+      effort="54"
       velocity="11.5191731" />
   </joint>
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/kuka</robotNamespace>
+    </plugin>
+  </gazebo>
+  <transmission name="shoulder_yaw_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_yaw">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shoulder_yaw_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="shoulder_pitch_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="shoulder_pitch">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="shoulder_pitch_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="elbow_pitch_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="elbow_pitch">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="elbow_pitch_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="elbow_roll_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="elbow_roll">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="elbow_roll_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="wrist_pitch_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_pitch">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_pitch_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="wrist_roll_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wrist_roll">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="wrist_roll_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
 </robot>

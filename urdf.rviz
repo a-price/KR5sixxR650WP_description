@@ -115,6 +115,8 @@ Visualization Manager:
           Value: true
         shoulder:
           Value: true
+        tool:
+          Value: true
         wrist:
           Value: true
       Marker Scale: 1
@@ -130,8 +132,31 @@ Visualization Manager:
                 forearm:
                   wrist:
                     palm:
-                      {}
+                      tool:
+                        {}
       Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Axes Length: 0.1
+      Axes Radius: 0.01
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.3
+      Head Radius: 0.1
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.05
+      Shape: Axes
+      Topic: /poses
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /trajectory_scores
+      Name: Marker
+      Namespaces:
+        "": true
+      Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
@@ -157,7 +182,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.45081
+      Distance: 2.24046
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
@@ -169,10 +194,10 @@ Visualization Manager:
         Z: 0.36273
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.530398
+      Pitch: 0.0753981
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.935398
+      Yaw: 0.7754
     Saved: ~
 Window Geometry:
   Displays:
