@@ -4,16 +4,21 @@
   <arg
     name="gui"
     default="False" />
+  <arg
+    name="fake_joints"
+    default="True" />
   <param
     name="robot_description"
     textfile="$(find KR5sixxR650WP_description)/robots/KR5sixxR650WP_description.URDF" />
   <param
     name="use_gui"
     value="$(arg gui)" />
-  <node
-    name="joint_state_publisher"
-    pkg="joint_state_publisher"
-    type="joint_state_publisher" />
+  <group if="$(arg fake_joints)" >
+    <node
+      name="joint_state_publisher"
+      pkg="joint_state_publisher"
+      type="joint_state_publisher" />
+  </group>
   <node
     name="robot_state_publisher"
     pkg="robot_state_publisher"

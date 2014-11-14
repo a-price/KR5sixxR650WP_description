@@ -95,7 +95,7 @@
     <limit
       lower="-2.9671"
       upper="2.9671"
-      effort="0"
+      effort="2"
       velocity="6.545" />
   </joint>
   <link
@@ -153,7 +153,7 @@
     <limit
       lower="-1.745329252"
       upper="2.35619449"
-      effort="0"
+      effort="2"
       velocity="5.236" />
   </joint>
   <link
@@ -211,7 +211,7 @@
     <limit
       lower="-3.647738137"
       upper="0.959931089"
-      effort="0"
+      effort="2"
       velocity="6.545" />
   </joint>
   <link
@@ -269,7 +269,7 @@
     <limit
       lower="-3.3161"
       upper="3.3161"
-      effort="0"
+      effort="2"
       velocity="7.1558" />
   </joint>
   <link
@@ -327,7 +327,7 @@
     <limit
       lower="-2.094395102"
       upper="2.094395102"
-      effort="0"
+      effort="2"
       velocity="7.1558" />
   </joint>
   <link
@@ -385,7 +385,60 @@
     <limit
       lower="-6.24827872"
       upper="6.24827872"
-      effort="0"
+      effort="2"
       velocity="11.5191731" />
+  </joint>
+  <link
+    name="tool_changer_link">
+    <inertial>
+      <origin
+        xyz="-0.0153714232685202 0.00530773612912049 -0.00212197905969624"
+        rpy="0 0 0" />
+      <mass
+        value="0.0809599830898989" />
+      <inertia
+        ixx="4.08868958979739E-05"
+        ixy="4.15845645293212E-06"
+        ixz="-1.31077233792475E-06"
+        iyy="2.56834497322383E-05"
+        iyz="-5.65945331835637E-06"
+        izz="3.70954404817017E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://KR5sixxR650WP_description/meshes/tool_changer_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://KR5sixxR650WP_description/meshes/tool_changer_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_changer_offset"
+    type="fixed">
+    <origin
+      xyz="0.063701 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="palm" />
+    <child
+      link="tool_changer_link" />
+    <axis
+      xyz="0 0 0" />
   </joint>
 </robot>
