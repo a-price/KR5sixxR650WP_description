@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>KR5sixxR650WP_description</name>
+  <version>0.0.1</version>
+  <description>The KR5sixxR650WP_description package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <maintainer email="arprice@gatech.edu">Andrew Price</maintainer>
+
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>urdf</exec_depend>
+</package>
