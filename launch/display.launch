@@ -1,12 +1,10 @@
 <launch>
   <arg
-    name="model" />
-  <arg
     name="gui"
-    default="False" />
+    default="True" />
   <param
     name="robot_description"
-    textfile="$(find KR5sixxR650WP_description)/robots/KR5sixxR650WP_description.URDF" />
+    textfile="$(find kr5sixx_r650wp_description)/robots/kr5sixx_r650wp_description.URDF" />
   <param
     name="use_gui"
     value="$(arg gui)" />
@@ -22,5 +20,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find KR5sixxR650WP_description)/urdf.rviz" />
+    args="-d $(find kr5sixx_r650wp_description)/urdf.rviz" />
 </launch>

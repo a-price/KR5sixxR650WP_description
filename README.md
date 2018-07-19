@@ -1,5 +1,5 @@
-KR5sixxR650WP_description
-=========================
+kr5sixx_r650wp_description
+==========================
 
 URDF Model for KUKA KR-5 sixx R650-WP industrial robot arm.
 

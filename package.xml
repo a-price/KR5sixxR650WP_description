@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>KR5sixxR650WP_description</name>
+  <name>kr5sixx_r650wp_description</name>
   <version>0.0.1</version>
-  <description>The KR5sixxR650WP_description package</description>
+  <description>The kr5sixx_r650wp_description package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <maintainer email="arprice@gatech.edu">Andrew Price</maintainer>
@@ -14,4 +14,9 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <exec_depend>urdf</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz</exec_depend>
+
+  <test_depend>roslaunch</test_depend>
 </package>

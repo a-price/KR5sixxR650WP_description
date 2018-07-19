@@ -1,5 +1,5 @@
 <robot
-  name="KR5sixxR650WP_description">
+  name="kr5sixx_r650wp_description">
   <link
     name="base_link">
     <visual>
@@ -8,7 +8,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/base_link.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -22,7 +22,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/base_link_collision.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/base_link_collision.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,7 +48,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/shoulder.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/shoulder.STL" />
       </geometry>
       <material
         name="">
@@ -62,7 +62,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/shoulder_collision.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/shoulder_collision.STL" />
       </geometry>
     </collision>
   </link>
@@ -106,7 +106,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/bicep.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/bicep.STL" />
       </geometry>
       <material
         name="">
@@ -120,7 +120,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/bicep_collision.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/bicep_collision.STL" />
       </geometry>
     </collision>
   </link>
@@ -164,7 +164,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/elbow.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/elbow.STL" />
       </geometry>
       <material
         name="">
@@ -178,7 +178,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/elbow_collision.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/elbow_collision.STL" />
       </geometry>
     </collision>
   </link>
@@ -222,7 +222,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/forearm.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/forearm.STL" />
       </geometry>
       <material
         name="">
@@ -236,7 +236,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/forearm_collision.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/forearm_collision.STL" />
       </geometry>
     </collision>
   </link>
@@ -280,7 +280,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/wrist.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/wrist.STL" />
       </geometry>
       <material
         name="">
@@ -294,7 +294,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/wrist_collision.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/wrist_collision.STL" />
       </geometry>
     </collision>
   </link>
@@ -338,7 +338,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/palm.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/palm.STL" />
       </geometry>
       <material
         name="">
@@ -352,7 +352,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://KR5sixxR650WP_description/meshes/palm_collision.STL" />
+          filename="package://kr5sixx_r650wp_description/meshes/palm_collision.STL" />
       </geometry>
     </collision>
   </link>
